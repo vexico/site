@@ -15,6 +15,13 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "appAssociation": "AUTO",
+    "rewrites": [
+      {
+        "source": "/i/**",
+        "dynamicLinks": true
+      }
     ]
   },
   "storage": {
@@ -39,7 +46,5 @@
     "ui": {
       "enabled": true
     }
-  },
-  "appAssociation": "AUTO",
-  "rewrites": [ { "source": "/i/**", "dynamicLinks": true } ]
+  }
 }
